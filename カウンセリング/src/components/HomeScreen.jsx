@@ -59,6 +59,14 @@ export function HomeScreen() {
                 </button>
 
                 <p className="time-notice">よむ時間：3〜5分くらい</p>
+
+                {/* Admin Link */}
+                <button
+                    className="admin-link"
+                    onClick={() => navigateTo('admin')}
+                >
+                    📊 管理画面
+                </button>
             </div>
         </div>
     );

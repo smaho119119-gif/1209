@@ -5,16 +5,24 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "server": "node server/index.js",
+    "dev:all": "concurrently \"npm run dev\" \"npm run server\"",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate:audio": "node scripts/generateAudio.js",
+    "generate:images": "node scripts/generateImages.js"
   },
   "dependencies": {
+    "better-sqlite3": "^9.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.22.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",
+    "concurrently": "^8.2.2",
     "vite": "^5.4.0"
   }
 }

@@ -4,6 +4,7 @@ import { StorySelectScreen } from './components/StorySelectScreen';
 import { StoryScreen } from './components/StoryScreen';
 import { QuestionsScreen } from './components/QuestionsScreen';
 import { SummaryScreen } from './components/SummaryScreen';
+import { AdminScreen } from './components/AdminScreen';
 import { Toast } from './components/Toast';
 
 /**
@@ -19,6 +20,7 @@ function AppContent() {
       {currentScreen === 'story' && <StoryScreen />}
       {currentScreen === 'questions' && <QuestionsScreen />}
       {currentScreen === 'summary' && <SummaryScreen />}
+      {currentScreen === 'admin' && <AdminScreen />}
       <Toast />
     </div>
   );
